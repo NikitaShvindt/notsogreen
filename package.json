@@ -1,21 +1,21 @@
 {
-  "name": "NotSoGreen",
+  "name": "notsogreen",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://NikitaShvindt.github.io/NotSoGreen",
+  "homepage": "https://NikitaShvindt.github.io/notsogreen",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /NotSoGreen/"
+    "build": "parcel build src/*.html --public-url /notsogreen/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NikitaShvindt/NotSoGreen.git"
+    "url": "git+https://github.com/NikitaShvindt/notsogreen.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NikitaShvindt/NotSoGreen/issues"
+    "url": "https://github.com/NikitaShvindt/notsogreen/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
