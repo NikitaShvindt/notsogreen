@@ -1,5 +1,12 @@
 @import './main';
 
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
 @mixin tel {
   @media screen and (min-width: 480px) {
     @content;
