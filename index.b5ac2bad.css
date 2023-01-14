@@ -1,2 +1,0 @@
-.overlay{opacity:0;visibility:hidden;width:100%;height:100%;z-index:20;background-color:rgba(0,0,0,.5);transition:all .3s;position:fixed;top:0;left:0}@media screen and (max-height:996px){.overlay{overflow:auto}}.modal{opacity:0;visibility:hidden;z-index:30;background-color:#fcfcfc;border:2px solid #f8d24e;border-radius:10px;transition:all .3s;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)}.modal.active,.overlay.active{opacity:1;visibility:visible}
-/*# sourceMappingURL=index.b5ac2bad.css.map */
