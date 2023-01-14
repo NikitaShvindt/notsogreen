@@ -1,8 +1,42 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import './main';
+
 
 body {
   font-family: 'Montserrat' sans-serif;
+      background-position: center;
+        background-size: cover;
+  background-image: url(../images/backgrund/backmobile.jpg);
+  
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/backgrund/backmobilex2.jpg);
+    }
+  
+    @include tablet {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/backgrund/backtablet.jpg);
+  
+      @include retina {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+          url(../images/backgrund/backtabletx2.jpg);
+      }
+    }
+  
+    @include desktop {
+      height: 600px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/backgrund/backdesktop.jpg);
+  
+      @include retina {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+          url(../images/backgrund/backdesktopx2.jpg);
+      }
+    }
 }
 .link {
   text-decoration: none;
@@ -17,4 +51,5 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  max-width: 100%;
 }
