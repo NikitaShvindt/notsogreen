@@ -102,7 +102,41 @@
     </ul>
 
     <div class="contacts__button">
-        <button type="submit" class="contacts__button1">Our Locations</button>
-        <button type="submit" class="contacts__button2">Franchise</button>
+        <button type="submit" class="contacts__button1 js-open-modal" data-modal="6">Our Locations</button>
+        <button type="submit" class="contacts__button2 js-open-modal" data-modal="7">Franchise</button>
     </div>
 </contacts>
+
+
+
+
+    <!-- модальное окно с картой-->
+
+    <div class="map modal" data-modal="6">
+        <button class="map__btn js-modal-close">X</button>
+        <h1 class="map__title">Our Locations</h1>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82799.69236621931!2d34.58126952726685!3d49.569638086564275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1673688148291!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button type="button" class="map__button">Open map</button>
+    </div>
+    
+
+     <!-- модальное окно с инпутом-->
+
+     <div>
+        <div class="modal" data-modal="7">
+
+          <button class="modal-button-svg js-modal-close">X</button>
+
+            <h1 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h1>
+            <p class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+         
+         <form class="form-mod">
+            <input type="text" class="form-input-mod" name="name" id="name" placeholder="Name" required>
+            <input type="tel" class="form-input-mod" name="tel" id="tel" placeholder="Phone" required>
+            <input type="email" class="form-input-mod" name="mail" id="mail" placeholder="Email" required>
+            <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+            <button type="submit" class="modal-button">Submit</button>
+          </form>
+
+        </div>
+      </div>
