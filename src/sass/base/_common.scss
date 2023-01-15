@@ -33,9 +33,7 @@ body {
 .list {
   list-style: none;
 }
-button {
-  cursor: pointer;
-}
+
 img {
   display: block;
   width: 100%;
@@ -43,7 +41,6 @@ img {
   max-width: 100%;
 }
 
-a:hover,
-button:hover {
+a, button {
   cursor: url(../images/about/vector.png), pointer;
 } 
