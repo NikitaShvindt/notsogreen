@@ -1,4 +1,6 @@
 .footer {
+  $self: &;
+
   background-color: #84a178;
   font-family: 'Montserrat';
   overflow: hidden;
@@ -41,6 +43,33 @@
   &__soc-item {
     &:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+
+  &__soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background-color: #f8d24e;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      #{$self}__soc-icon {
+        fill: #fcfcfc;
+      }
+    }
+  }
+
+  &__soc-icon {
+    fill: #84a178;
+    transition: 0.3s fill;
+
+    &--telegram {
+      margin-left: -2px;
     }
   }
 
