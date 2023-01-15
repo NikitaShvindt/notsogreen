@@ -17,10 +17,10 @@
 .contacts {
     position: relative;
     background-color: #84A178;
-    height: 1430px;
+    height: 100%;
 
     @media screen and (min-width:768px) {
-        height: 670px;
+        // height: 670px;
     }
 }
 .contacts__list {
@@ -44,10 +44,10 @@
     background-color: #FCFCFC;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     margin-bottom: 16px;
-    z-index: 2;
+    // z-index: 2;
 
     @media screen and (min-width:768px) {
         width: 224px;
@@ -89,7 +89,7 @@
         font-size: 12px;
         line-height: 1.2;
         letter-spacing: 0.04em;
-        margin-bottom: 32px;
+        // margin-bottom: 32px;
     }
     @media screen and (min-width:1200px) {
         margin-top: 40px;
@@ -250,14 +250,16 @@
 .contacts__button {
     display: flex;
     flex-direction: column;
-    margin-top: 910px;
+    // margin-top: 910px;
 
     @media screen and (min-width:768px) {
         flex-direction: row;
-        margin-top: 270px;
+        // margin-top: 270px;
+        margin-bottom: 40px;
     }
     @media screen and (min-width:1200px) {
-        margin-top: 420px;
+        // margin-top: 420px;
+        margin-bottom: 60px;
     }
 } 
 .contacts__button1 {
@@ -289,8 +291,13 @@
     }
 
     @media screen and (min-width:768px) {
-        margin-top: 40px;
+        margin-top: 290px;
         margin-right: 16px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 460px;
+        margin-right: 16px;
+        // margin-bottom: 60px;
     }
 }
 .contacts__button2 {
@@ -311,7 +318,7 @@
     color: #000000;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     &:hover {
         border: 2px solid #0A8817;
     }
@@ -321,8 +328,13 @@
     }
 
     @media screen and (min-width:768px) {
-        margin-top: 40px;
-        margin-bottom: 16px;
+        margin-top: 290px;
+        margin-bottom: 60px;
+        margin-left: 0;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 460px;
+        margin-bottom: 120px;
         margin-left: 0;
     }
 }
@@ -346,7 +358,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         width: 568px;
         height: 458px;
     }
@@ -365,16 +377,16 @@
     font-size: 16px;
     line-height: 1.5;
     color: #131313;
-    margin-top: 28px;
-    margin-left: 57px;
+    margin-top: 0px;
     margin-bottom: 20px;
+    margin-left: 17px;
+    margin-right: auto;
 
-   @media screen and (min-width:1200px) {
+   @media screen and (min-width:768px) {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-    margin-top: 32px;
-    margin-left: 183px;
+    margin-left: 110px;
     margin-bottom: 32px;
    }
 }
@@ -382,13 +394,12 @@
     width: 224px;
     height: 199px;
     margin-bottom: 24px;
-    margin-left: 28px;
     border-radius: 10px;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         width: 448px;
         height: 260px;
-        margin-left: 60px;
+        // margin-left: 60px;
        }
 }
 .map__button {
@@ -407,7 +418,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-
+    
     @media screen and (min-width:1200px) {
         width: 145px;
         font-size: 14px;
