@@ -1,0 +1,47 @@
+.gallery {
+    background-image: linear-gradient(to bottom,
+            #84A178 30px,
+            rgba(0, 0, 0, 0) 30px,
+            rgba(0, 0, 0, 0));
+
+    @include tablet {
+        background-image: linear-gradient(to bottom,
+                #84A178 144px,
+                rgba(0, 0, 0, 0) 144px,
+                rgba(0, 0, 0, 0));
+    }
+
+    @include desktop {
+        background-image: linear-gradient(to bottom,
+                #84A178 98px,
+                rgba(0, 0, 0, 0) 98px,
+                rgba(0, 0, 0, 0));
+    }
+}
+
+.gallery__img {
+    margin: 0 auto;
+    border-radius: 8px;
+    color: #FCFCFC;
+    background-color: #84A178;
+    width: 440px;
+    height: auto;
+
+    @include tel {
+        width: 440px;
+        height: 204px;
+    }
+
+    @include tablet {
+        margin: 0 auto;
+        width: 704px;
+        height: 327px;
+        border-radius: 18px;
+    }
+
+    @include desktop {
+        width: 1013px;
+        height: 422px;
+        border-radius: 24px;
+    }
+}
