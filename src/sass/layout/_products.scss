@@ -1,0 +1,135 @@
+.ice-cream {
+    // background-image: url(background2@1x.2d080864.jpg); фон
+    background-position: top;
+    background-repeat: repeat;
+    background-size: contain;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+  
+  .ice-cream__section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .ice-cream__label {
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 12px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.22;
+  }
+  
+  .ice-cream__title {
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 148px;
+    font-family: Seymour One;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.27;
+  }
+  
+  .ice-cream-products__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 168px;
+    display: flex;
+  }
+
+  .products-item {
+    max-width: 100%;
+    min-height: 420px;
+    position: relative;
+    transform: scale(1);
+  }
+
+  .products-item__icecream {
+    background: #aec6a5;
+    border-radius: 24px;
+  }
+
+  .products-item__icecream::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(rgba(156,190,143,.7),rgba(156,190,143,.7)),none;
+
+    border-radius: 101px;
+    position: absolute;
+    bottom: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 5px 20px rgb(10 136 23 / 25%);
+  }
+
+  .products-wrap {
+    height: 100%;
+    padding: 123px 40px 85px;
+}
+
+.ice-cream__name {
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #131313;
+    margin-bottom: 40px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.ice-cream__paragraph {
+    max-width: 200px;
+    text-align: center;
+    letter-spacing: .04em;
+    color: #131313;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.79;
+}
+
+.ice-cream__button {
+    cursor: pointer;
+    width: 38px;
+    height: 14px;
+    background-color: rgba(0,0,0,0);
+    // background-image: url(arrow_black_default.0ed6928c.svg); доделать
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    margin: 0 auto;
+    transition-property: height,width,background-image;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+}
