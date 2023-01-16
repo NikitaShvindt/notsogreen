@@ -216,15 +216,12 @@
   background-size: contain;
   border: none;
   margin: 0 auto;
-  transition-property: height, width, background-image;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   position: absolute;
   bottom: 16px;
   left: 50%;
   transform: translate(-50%);
-  color: #131313;
+  fill: #131313;
 
   @media screen and (min-width: 768px) {
     bottom: 12px;
@@ -233,6 +230,8 @@
   @media screen and (min-width: 1200px) {
     bottom: 60px;
   }
+
+
 }
 
 .products-item__icecream::after {
