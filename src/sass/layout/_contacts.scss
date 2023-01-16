@@ -14,16 +14,11 @@
     position: relative;
     background-color: #84A178;
     height: 100%;
-
-    @media screen and (min-width:768px) {
-        // height: 670px;
-    }
 }
 .contacts__list {
     position: absolute;
     top: -360px;
     left: 50%;
-    // margin-bottom: 900px;
     transform: translate(-50%);
    
     @media screen and (min-width:768px) {
@@ -40,11 +35,8 @@
     background-color: #FCFCFC;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    // margin-left: auto;
-    // margin-right: auto;
     margin-bottom: 16px;
-    // z-index: 2;
-
+  
     @media screen and (min-width:768px) {
         width: 224px;
         height: 550px;
@@ -75,7 +67,7 @@
     font-style: normal;
     // @include font (500, 12px, 1.16, 0.04em);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.04em;
     color: #131313;
@@ -92,7 +84,6 @@
     @media screen and (min-width:1200px) {
         margin-top: 40px;
     }
-  
 }
 .contacts__address {
     display: block;
@@ -167,7 +158,6 @@
     padding-bottom: 24px;
     margin-left: 32px;
     margin-right: 32px;
-    // margin-top: 24px;
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
 
@@ -250,15 +240,12 @@
 .contacts__button {
     display: flex;
     flex-direction: column;
-    // margin-top: 910px;
-
+   
     @media screen and (min-width:768px) {
         flex-direction: row;
-        // margin-top: 270px;
         margin-bottom: 40px;
     }
     @media screen and (min-width:1200px) {
-        // margin-top: 420px;
         margin-bottom: 60px;
     }
 } 
@@ -301,7 +288,6 @@
     @media screen and (min-width:1200px) {
         margin-top: 460px;
         margin-right: 16px;
-        // margin-bottom: 60px;
     }
 }
 .contacts__button2 {
@@ -346,12 +332,7 @@
         margin-left: 0;
     }
 }
-// .contacts__button--span {
-//     padding-left: 4px;
-//     &:focus {
-//         color: #FFFFFF;
-//     }
-// }
+
 
 
 // <!-- модальное окно с картой-->
@@ -407,8 +388,7 @@
     @media screen and (min-width:768px) {
         width: 448px;
         height: 260px;
-        // margin-left: 60px;
-       }
+    }
 }
 .map__button {
     width: 134px;
@@ -552,7 +532,6 @@ textarea {
         margin-left: 40px;
     }
 }
-
 .modal-button {
     background: #F8D24E;
     border-radius: 10px;
