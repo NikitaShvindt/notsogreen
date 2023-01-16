@@ -1,0 +1,316 @@
+<header class="header">
+  <div class="container header__container">
+    <a href="./index.html" class="header__logo">
+      <picture>
+        <source
+          srcset="
+            ./images/header/logodesktop.png   1x,
+            ./images/header/logodesktopx2.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <img
+          srcset="
+            ./images/header/logoother.png   1x,
+            ./images/header/logootherx2.png 2x
+          "
+          src="./images/header/logoother.png"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <nav class="header__navigation">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a href="#home" class="menu__link link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link link">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a href="#products" class="menu__link link">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32" aria-label="Mobile menu switch">
+        <use
+          class="icon-menu"
+          href="./images/svg/symbol-defs.svg#icon-eva_menu-fill"
+        ></use>
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="button header__btn js-open-modal"
+      data-modal="1"
+    >
+      Buy now
+      <svg width="12" height="12" class="button__icon">
+        <use href="./images/svg/symbol-defs.svg#icon-vectorright"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <a href="./index.html" class="logo">
+      <picture>
+        <source
+          srcset="
+            ./images/header/logodesktop.png   1x,
+            ./images/header/logodesktopx2.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <img
+          srcset="
+            ./images/header/logoother.png   1x,
+            ./images/header/logootherx2.png 2x
+          "
+          src="./images/header/logoother.png"
+          alt="logo"
+          width="60"
+          height="65"
+        />
+      </picture>
+    </a>
+    <button class="menu-toggle js-close-menu">
+      <svg width="32" height="32">
+        <use
+          class="icon-cross"
+          href="./images/svg/symbol-defs.svg#icon-ep_close"
+        ></use>
+      </svg>
+    </button>
+
+    <ul class="list mobile-menu">
+      <li class="items mobile-menu__items">
+        <a href="#home" class="link mobile-menu__link mobile-menu__link"
+          >Home</a
+        >
+      </li>
+      <li class="items mobile-menu__items">
+        <a
+          href="#about"
+          class="link mobile-menu__link mobile-menu__link--current"
+          >How it’s made?</a
+        >
+      </li>
+      <li class="items mobile-menu__items">
+        <a href="#products" class="link mobile-menu__link mobile-menu__link"
+          >Our products</a
+        >
+      </li>
+      <li class="items mobile-menu__items">
+        <a href="#contacts" class="link mobile-menu__link mobile-menu__link"
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <button
+      type="button"
+      class="button btn-mobile js-open-modal"
+      data-modal="1"
+    >
+      Buy now
+      <svg width="12" height="12" class="btn-icon">
+        <use href="./images/svg/symbol-defs.svg#icon-vectorright"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modal modal--anim" data-modal="1">
+    <button type="button" class="modal-close js-modal-close">
+      <svg class="icon-modal">
+        <use href="./images/svg/symbol-defs.svg#icon-ep_close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Buy now</h2>
+    <form class="buying-form">
+      <span class="icecream-check">
+        <input
+          type="checkbox"
+          name="icecream"
+          value="ice cream"
+          class="modal-check visually-hidden"
+          id="icecream"
+        />
+        <label for="icecream" class="check-content">
+          <span class="icecream-title icecream-title--icecream">
+            <span class="img-tumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/products/products1desktop.png   1x,
+                    ./images/products/products1x2desktop.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/products/products1tablet.png   1x,
+                    ./images/products/products1tabletx2.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/products/products1mobile.png   1x,
+                    ./images/products/products1mobilex2.png 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/products/products1mobile.png   1x,
+                    ./images/products/products1mobilex2.png 2x
+                  "
+                  src="./images/products/products1mobile.png"
+                  alt="line"
+                  width="132"
+                />
+              </picture>
+            </span>
+            ice cream</span
+          >
+        </label>
+
+        <input
+          type="checkbox"
+          name="ice-coffee"
+          value="ice-coffee"
+          class="modal-check visually-hidden"
+          id="ice-coffee"
+          checked
+          autofocus
+        />
+        <label for="ice-coffee" class="check-content">
+          <span class="icecream-title icecream-title--coffee">
+            <span class="img-tumb--coffee">
+              <picture>
+                <source
+                  srcset="
+                    ./images/products/products2desktop.png   1x,
+                    ./images/products/products2desktopx2.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/products/products2tablet.png   1x,
+                    ./images/products/products2tabletx2.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/products/products2mobile.png   1x,
+                    ./images/products/products2mobilex2.png 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/products/products2mobile.png   1x,
+                    ./images/products/products2mobilex2.png 2x
+                  "
+                  src="./images/products/products2mobile.png"
+                  alt="line"
+                  width="132"
+                />
+              </picture>
+            </span>
+            ice coffee</span
+          >
+        </label>
+
+        <input
+          type="checkbox"
+          name="milkshake"
+          value="milkshake"
+          class="modal-check visually-hidden"
+          id="milkshake"
+        />
+        <label for="milkshake" class="check-content">
+          <span class="icecream-title icecream-title--milkshake">
+            <span class="img-tumb--milkshake">
+              <picture>
+                <source
+                  srcset="
+                    ./images/products/products3desktop.png   1x,
+                    ./images/products/products3desktopx2.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/products/products3tublet.png   1x,
+                    ./images/products/products3tubletx2.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/products/priducts3mobile.png   1x,
+                    ./images/products/priducts3mobilex2.png 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/products/priducts3mobile.png   1x,
+                    ./images/products/priducts3mobilex2.png 2x
+                  "
+                  src="./images/products/priducts3mobile.png"
+                  alt="line"
+                  width="132"
+                />
+              </picture>
+            </span>
+            milkshake</span
+          >
+        </label>
+      </span>
+
+      <div class="register-form" role="group">
+        <label class="register-form-lable">
+          <input
+            type="text"
+            class="register-form-input"
+            name="name"
+            placeholder="Name"
+            pattern="\w{3,16}"
+            required
+          />
+        </label>
+
+        <label class="register-form-lable">
+          <input
+            type="tel"
+            class="register-form-input"
+            name="tel"
+            placeholder="Phone"
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            required
+          />
+        </label>
+
+        <label>
+          <textarea
+            class="form-field-comments"
+            name="comments"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="register-form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</header>
