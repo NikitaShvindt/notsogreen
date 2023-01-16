@@ -1,5 +1,5 @@
 .ice-cream {
-    // background-image: url(background2@1x.2d080864.jpg); фон
+    background-image: url(../images/backgrund/backgroudmobile.png);
     background-position: top;
     background-repeat: repeat;
     background-size: contain;
@@ -19,17 +19,9 @@
       max-width: 1200px;
     }
   }
-  
-  .ice-cream__section {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+ 
   
   .ice-cream__label {
-    text-align: center;
     letter-spacing: .04em;
     text-transform: uppercase;
     color: #131313;
@@ -38,6 +30,9 @@
     font-size: 18px;
     font-weight: 800;
     line-height: 1.22;
+
+    position: relative;
+    right: -100px;
   }
   
   .ice-cream__title {
@@ -119,7 +114,7 @@
     width: 38px;
     height: 14px;
     background-color: rgba(0,0,0,0);
-    // background-image: url(arrow_black_default.0ed6928c.svg); доделать
+    background-image: url(../images/svg/components/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     border: none;
@@ -130,6 +125,21 @@
     display: block;
     position: absolute;
     bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.products-item__icecream::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/products/products1mobile.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 101px;
+    position: absolute;
+    bottom: 78%;
     left: 50%;
     transform: translate(-50%);
 }
