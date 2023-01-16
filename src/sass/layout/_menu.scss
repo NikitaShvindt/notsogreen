@@ -1,0 +1,132 @@
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    margin-left: 440px;
+    margin-right: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.icon-cross,
+.icon-menu {
+  fill: currentColor;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 64px;
+  padding-left: 32px;
+  background-color: #84a178;
+  color: white;
+  z-index: 10;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  &.is-open {
+    transform: translateX(0);
+  }
+  & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+}
+.menu-container .menu-toggle {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+}
+.menu-container .logo {
+  display: flex;
+  align-items: center;
+}
+.mobile-menu {
+  margin-top: 51px;
+  &__link {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    text-align: center;
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .mobile-menu {
+    margin-top: 76px;
+    &__link {
+      display: block;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.23;
+      text-align: center;
+      text-decoration: none;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+  color: black;
+}
+.mobile-menu__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+.btn-mobile {
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.btn-mobile:hover {
+  background: #0a8817;
+}
+.btn-mobile:focus {
+  background: #0a8817;
+  color: white;
+}
+.btn-mobile:disabled {
+  background: #ababab;
+}
+.btn-icon {
+  fill: currentColor;
+}
