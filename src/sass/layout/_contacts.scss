@@ -65,19 +65,11 @@
     padding: 4px 22px;
     font-family: 'Montserrat';
     font-style: normal;
-    // @include font (500, 12px, 1.16, 0.04em);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
+    @include font (12px, 500, 1.16, 0.04em);
     color: #131313;
 
     @media screen and (min-width:768px) {
-        // @include font (500, 16px, 1.4, 0.04em);
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.2;
-        letter-spacing: 0.04em;
+        @include font ( 16px, 500, 1.4, 0.04em);
         margin-left: 24px;
         margin-bottom: 32px;
     }
@@ -89,11 +81,7 @@
     display: block;
     font-family: 'Montserrat';
     font-style: normal;
-    // @include font (500, 12px, 1.83, 0.04em);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    letter-spacing: 0.04em;
+    @include font (12px, 500, 1.83, 0.04em);
     color: #D6936D;
     margin-left: 32px;
     margin-right: 32px;
@@ -104,54 +92,31 @@
     }
 
     @media screen and (min-width:768px) {
-        // @include font (500, 14px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (14px, 500, 1.83, 0.04em);
         margin-bottom: 32px;
     }
     @media screen and (min-width:1200px) {
-        // @include font (500, 16px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (16px, 500, 1.83, 0.04em);
     }
 }
 .contacts__address--span {
     font-family: 'Montserrat';
     font-style: normal;
-    // @include font (500, 12px, 1.83, 0.04em);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
-    letter-spacing: 0.04em;
+    @include font (12px, 500, 1.83, 0.04em);
     color: #131313;
     margin-bottom: 12px;
 
     @media screen and (min-width:768px) {
-        // @include font (500, 14px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (14px, 500, 1.83, 0.04em);
     }
     @media screen and (min-width:1200px) {
-        // @include font (500, 16px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (16px, 500, 1.83, 0.04em);
         margin-bottom: 8px;
     }
 }
 .contacts__table {
-    // @include font (500, 12px, 1.83, null);
+    @include font (12px, 500, 1.83, null);
     font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
     font-style: normal;
     color: #ABABAB;
     padding-top: 24px;
@@ -162,18 +127,10 @@
     border-bottom: 1px solid #E1E1E1;
 
     @media screen and (min-width:768px) {
-        // @include font (500, 14px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (14px, 500, 1.83, 0.04em);
     }
     @media screen and (min-width:1200px) {
-        // @include font (500, 16px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (16px, 500, 1.83, 0.04em);
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -181,51 +138,31 @@
 .contacts__table--title {
     font-family: 'Montserrat';
     font-style: normal;
-    // @include font (500, 12px, 1.83, null);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.83;
+    @include font (12px, 500, 1.83, null);
     color: #131313;
 
     @media screen and (min-width:768px) {
-        // @include font (500, 14px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (14px, 500, 1.83, 0.04em);
     }
     @media screen and (min-width:1200px) {
-        // @include font (500, 16px, 1.83, 0.04em);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.83;
-        letter-spacing: 0.04em;
+        @include font (16px, 500, 1.83, 0.04em);
     }
 }
 .contacts__cont {
     font-family: 'Montserrat';
-    // @include font (500, 12px, 1.6, null);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.6;
+    @include font (12px, 500, 1.6, null);
     font-style: normal;
     color: #131313;
     margin-top: 24px;
     margin-bottom: 24px;
 
     @media screen and (min-width:768px) {
-        // @include font (500, 14px, 1.5, null);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.5;
+        @include font (14px, 500, 1.5, null);
         margin-top: 32px;
         margin-bottom: 40px;
     }
     @media screen and (min-width:1200px) {
-        // @include font (500, 16px, 1.5, null);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
+        @include font (16px, 500, 1.5, null);
     }
 }
 .contacts__tel {
@@ -259,10 +196,7 @@
     border-radius: 10px;
     border-style: none;
     font-family: 'Montserrat';
-    // @include font (600, 14px, 1.29, null);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
+    @include font (14px, 600, 1.29, null);
     font-style: normal;
     color: #131313;
     margin-top: 935px;
@@ -300,10 +234,7 @@
     border: 2px solid #F8D24E;
     background-color: #84A178;
     font-family: 'Montserrat';
-    // @include font (600, 14px, 1.29, null);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
+    @include font (14px, 600, 1.29, null);
     font-style: normal;
     color: #000000;
     margin-left: auto;
@@ -362,9 +293,7 @@
 .map__title {
     font-family: 'Seymour One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    @include font (16px, 400, 1.5, null);
     color: #131313;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -372,16 +301,12 @@
     margin-right: auto;
 
    @media screen and (min-width:768px) {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
+    @include font (20px, 400, 1.4, null);
     margin-left: 110px;
     margin-bottom: 32px;
    }
 }
 .map__iframe {
-    width: 224px;
-    height: 199px;
     margin-bottom: 24px;
     border-radius: 10px;
 
@@ -395,11 +320,10 @@
     height: 42px;
     background: #F8D24E;
     border-radius: 10px;
+    border-style: none;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
+    @include font (12px, 600, 1.25, null);
     color: #131313;
     display: flex;
     justify-content: center;
@@ -409,9 +333,8 @@
     
     @media screen and (min-width:1200px) {
         width: 145px;
-        font-size: 14px;
-        line-height: 1.2;
-       }
+        @include font (14px, 600, 1.2, null);
+    }
 }
 
 
@@ -453,9 +376,7 @@
 .modal__title {
     font-family: 'Seymour One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    @include font (16px, 400, 1.5, null);
     display: flex;
     align-items: center;
     text-align: center;
@@ -463,8 +384,7 @@
     margin-bottom: 20px;
 
     @media screen and (min-width:768px) {
-        font-size: 20px;
-        line-height: 1.4;
+        @include font (20px, 400, 1.4, null);
         margin-left: 63px;
         margin-right: 63px;
     }
@@ -472,16 +392,12 @@
 .modal__text {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
+    @include font (14px, 400, 1.4, null);
     color: #131313;
     margin-bottom: 24px;
 
     @media screen and (min-width:768px) {
-        font-size: 16px;
-        line-height: 1.4;
-          
+        @include font (16px, 400, 1.4, null);
     }
 }
 .form-input-mod {
@@ -491,9 +407,7 @@
     margin-bottom: 12px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.40;
+    @include font (12px, 400, 1.4, null);
     color: #131313;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
@@ -502,22 +416,19 @@
     @media screen and (min-width:768px) {
         width: 368px;
         height: 42px;
+        @include font (14px, 400, 1.4, null);
         padding-left: 16px;
         margin-bottom: 16px;
         margin-left: 40px;
-        font-size: 14px;
     }
 }
-
 textarea {
     resize: none;
     width: 224px;
     height: 64px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
+    @include font (12px, 400, 1.4, null);
     color: #131313;
     padding: 8px 12px;
     background: rgba(248, 210, 78, 0.1);
@@ -527,7 +438,7 @@ textarea {
     @media screen and (min-width:768px) {
         width: 368px;
         height: 84px;
-        font-size: 14px;
+        @include font (14px, 400, 1.4, null);
         padding: 11px 16px;
         margin-left: 40px;
     }
@@ -540,9 +451,7 @@ textarea {
     height: 42px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
+    @include font (12px, 600, 1.25, null);
     display: flex;
     color: #131313;
     padding: 12px 34px;
@@ -552,6 +461,6 @@ textarea {
 
     @media screen and (min-width:768px) {
         width: 121px;
-        font-size: 14px;
+        @include font (14px, 600, 1.25, null);
     }
   }
