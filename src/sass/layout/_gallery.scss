@@ -21,12 +21,12 @@
 
 .gallery__img {
     margin: 0 auto;
+    width: 440px;
+    height: auto;
     border-radius: 8px;
     color: #FCFCFC;
     background-color: #84A178;
-    width: 440px;
-    height: auto;
-
+    
     @include tel {
         width: 440px;
         height: 204px;
