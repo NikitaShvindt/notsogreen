@@ -19,7 +19,7 @@
   
   
   .advantages__list {
-  
+    background-color: #84A178;
     display: flex;
     
     margin-bottom: 10px;
@@ -51,11 +51,11 @@
   
   
   .advantages__item--icoweight::before {
-    background-image: url(/src/images/advantages/weight.jpg);
+    background-image: url(/src/images/advantages/weight.png);
   }
   
   .advantages__item--icocrema::before {
-    background-image: url(/src/images/advantages/ice.jpg);
+    background-image: url(/src/images/advantages/ice.png);
   }
   
   .advantages__item {
