@@ -1,0 +1,466 @@
+.contacts__bg {
+    background:rgba(253, 253, 253, 0.0);
+    width: 100%;
+    height: 350px;
+    
+    @media screen and (min-width:768px) {
+        height: 270px;
+    }
+    @media screen and (min-width:1200px) {
+        height: 120px;
+    }
+}
+.contacts {
+    position: relative;
+    background-color: #84A178;
+    height: 100%;
+}
+.contacts__list {
+    position: absolute;
+    top: -360px;
+    left: 50%;
+    transform: translate(-50%);
+   
+    @media screen and (min-width:768px) {
+        display: flex;
+        top: -280px;
+    }
+      @media screen and (min-width:1200px) {
+        top: -140px;
+    }
+}
+.contacts__items{
+    width: 280px;
+    height: 412px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-bottom: 16px;
+  
+    @media screen and (min-width:768px) {
+        width: 224px;
+        height: 550px;
+        margin-bottom: 40px;
+        
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        width: 368px;
+        height: 542px;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+}
+.contacts__btn {
+    background: #F8D24E;
+    border-radius: 4px;
+    border-style: none ;
+    margin-left: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 4px 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 500, 1.16, 0.04em);
+    color: #131313;
+
+    @media screen and (min-width:768px) {
+        @include font ( 16px, 500, 1.4, 0.04em);
+        margin-left: 24px;
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 40px;
+    }
+}
+.contacts__address {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 500, 1.83, 0.04em);
+    color: #D6936D;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+    &:hover, 
+    &:focus {
+        text-decoration: underline;
+    }
+
+    @media screen and (min-width:768px) {
+        @include font (14px, 500, 1.83, 0.04em);
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width:1200px) {
+        @include font (16px, 500, 1.83, 0.04em);
+    }
+}
+.contacts__address--span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 500, 1.83, 0.04em);
+    color: #131313;
+    margin-bottom: 12px;
+
+    @media screen and (min-width:768px) {
+        @include font (14px, 500, 1.83, 0.04em);
+    }
+    @media screen and (min-width:1200px) {
+        @include font (16px, 500, 1.83, 0.04em);
+        margin-bottom: 8px;
+    }
+}
+.contacts__table {
+    @include font (12px, 500, 1.83, null);
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #ABABAB;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width:768px) {
+        @include font (14px, 500, 1.83, 0.04em);
+    }
+    @media screen and (min-width:1200px) {
+        @include font (16px, 500, 1.83, 0.04em);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.contacts__table--title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 500, 1.83, null);
+    color: #131313;
+
+    @media screen and (min-width:768px) {
+        @include font (14px, 500, 1.83, 0.04em);
+    }
+    @media screen and (min-width:1200px) {
+        @include font (16px, 500, 1.83, 0.04em);
+    }
+}
+.contacts__cont {
+    font-family: 'Montserrat';
+    @include font (12px, 500, 1.6, null);
+    font-style: normal;
+    color: #131313;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        @include font (14px, 500, 1.5, null);
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        @include font (16px, 500, 1.5, null);
+    }
+}
+.contacts__tel {
+    margin-bottom: 6px;
+    margin-left: 32px;
+    color: #131313;
+}
+.contacts__mail {
+    margin-left: 32px;
+    color: #131313;
+}  
+.contacts__button {
+    display: flex;
+    flex-direction: column;
+   
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 60px;
+    }
+} 
+.contacts__button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 196px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Montserrat';
+    @include font (14px, 600, 1.29, null);
+    font-style: normal;
+    color: #131313;
+    margin-top: 935px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    // &::after {
+    //     content: "..//../images/svg/symbol-defs.svg#icon-vectorright";
+
+    // }
+    &:hover {
+        background:  #0A8817;
+    }
+    &:focus {
+        background:  #0A8817;
+        color: #FFFFFF;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 290px;
+        margin-right: 16px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 460px;
+        margin-right: 16px;
+    }
+}
+.contacts__button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 196px;
+    height: 42px;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background-color: #84A178;
+    font-family: 'Montserrat';
+    @include font (14px, 600, 1.29, null);
+    font-style: normal;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+       // &::after {
+    //     content: "..//../images/svg/symbol-defs.svg#icon-vectorright";
+
+    // }
+    &:hover {
+        border: 2px solid #0A8817;
+    }
+    &:focus {
+        border: 2px solid #0A8817;
+        color: #FFFFFF;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 290px;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 460px;
+        margin-bottom: 120px;
+        margin-left: 0;
+    }
+}
+
+
+
+// <!-- модальное окно с картой-->
+
+.map {
+    position: relative;
+    width: 280px;
+    height: 365px;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:768px) {
+        width: 568px;
+        height: 458px;
+    }
+}
+.map__btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-style: none;
+    background-color: #FCFCFC;
+}
+.map__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    @include font (16px, 400, 1.5, null);
+    color: #131313;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 17px;
+    margin-right: auto;
+
+   @media screen and (min-width:768px) {
+    @include font (20px, 400, 1.4, null);
+    margin-left: 110px;
+    margin-bottom: 32px;
+   }
+}
+.map__iframe {
+    margin-bottom: 24px;
+    border-radius: 10px;
+
+    @media screen and (min-width:768px) {
+        width: 448px;
+        height: 260px;
+    }
+}
+.map__button {
+    width: 134px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 600, 1.25, null);
+    color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width:1200px) {
+        width: 145px;
+        @include font (14px, 600, 1.2, null);
+    }
+}
+
+
+// <!-- модальное окно с инпутом-->
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 280px;
+    padding: 30px;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:768px) {
+        width: 568px;
+        padding: 32px 60px;
+    }
+}
+
+.modal-button-svg {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 9px;
+    right: 9px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: #FCFCFC;
+    border-style: none;
+}
+
+.modal__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    @include font (16px, 400, 1.5, null);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        @include font (20px, 400, 1.4, null);
+        margin-left: 63px;
+        margin-right: 63px;
+    }
+}
+.modal__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (14px, 400, 1.4, null);
+    color: #131313;
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        @include font (16px, 400, 1.4, null);
+    }
+}
+.form-input-mod {
+    width: 224px;
+    height: 32px;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 400, 1.4, null);
+    color: #131313;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    @media screen and (min-width:768px) {
+        width: 368px;
+        height: 42px;
+        @include font (14px, 400, 1.4, null);
+        padding-left: 16px;
+        margin-bottom: 16px;
+        margin-left: 40px;
+    }
+}
+textarea {
+    resize: none;
+    width: 224px;
+    height: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 400, 1.4, null);
+    color: #131313;
+    padding: 8px 12px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+
+    @media screen and (min-width:768px) {
+        width: 368px;
+        height: 84px;
+        @include font (14px, 400, 1.4, null);
+        padding: 11px 16px;
+        margin-left: 40px;
+    }
+}
+.modal-button {
+    background: #F8D24E;
+    border-radius: 10px;
+    border: none ;
+    width: 114px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    @include font (12px, 600, 1.25, null);
+    display: flex;
+    color: #131313;
+    padding: 12px 34px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:768px) {
+        width: 121px;
+        @include font (14px, 600, 1.25, null);
+    }
+  }

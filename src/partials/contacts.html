@@ -1,0 +1,142 @@
+<contacts>
+    <div class="contacts__bg"></div>
+    <div class="contacts">
+    <h3 id="contacts" class="visually-hidden">Contacts</h3>
+    
+    <ul class="contacts__list list">
+        <li class="contacts__items">
+            <button class="contacts__btn">CAFE</button>
+                <address class="contacts__address"><span class="contacts__address--span">Chicago</span> <br>
+                        10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</address>
+                <div class="contacts__table">
+                    <table>
+                        <tr>
+                            <th class="contacts__table--title">Monday - Friday</th>
+                        </tr>
+                        <tr>
+                            <td>06:00 AM - 10:00 PM</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th class="contacts__table--title">Saturday - Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>08:00 AM - 16:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <ul class="contacts__cont list">
+                    <li>
+                        <a href="tel:+610383766284" class="link contacts__tel">+61(0) 383 766 284</a>
+                    </li>
+                    <li>
+                        <a href="mailto:noreply@envato.com" class="link contacts__mail">noreply@envato.com</a>
+                    </li>
+                </ul>
+        </li>
+
+        <li class="contacts__items">
+            <button class="contacts__btn">FOODTRUCK</button>
+            <address class="contacts__address"><span class="contacts__address--span">Los Angeles</span> <br>
+                    1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</address>
+            <div class="contacts__table">
+                <table>
+                    <tr>
+                        <th class="contacts__table--title">Monday - Friday</th>
+                    </tr>
+                    <tr>
+                        <td>06:00 AM - 10:00 PM</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="contacts__table--title">Saturday - Sunday</th>
+                    </tr>
+                    <tr>
+                        <td>08:00 AM - 16:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+                <ul class="contacts__cont list">
+                    <li>
+                        <a href="tel:+610383766284" class="link contacts__tel">+61(0) 383 766 284</a>
+                    </li>
+                    <li>
+                        <a href="mailto:noreply@envato.com" class="link contacts__mail">noreply@envato.com</a>
+                    </li>
+                </ul>
+        </li>
+
+        <li class="contacts__items">
+            <button class="contacts__btn">CAFE</button>
+            <address class="contacts__address"><span class="contacts__address--span">New York</span> <br>
+                    726 Sterling Pl, Brooklyn, NY 11222, USA</address>
+                <div class="contacts__table">
+                    <table>
+                        <tr>
+                            <th class="contacts__table--title">Monday - Friday</th>
+                        </tr>
+                        <tr>
+                            <td>06:00 AM - 10:00 PM</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th class="contacts__table--title">Saturday - Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>08:00 AM - 16:00 PM</td>
+                        </tr>
+                </table>
+            </div>
+                <ul class="contacts__cont list">
+                    <li>
+                        <a href="tel:+610383766284" class="link contacts__tel">+61(0) 383 766 284</a>
+                    </li>
+                    <li>
+                        <a href="mailto:noreply@envato.com" class="link contacts__mail">noreply@envato.com</a>
+                    </li>
+                </ul>
+        </li>
+    </ul>
+
+    <div class="contacts__button">
+        <button type="submit" class="contacts__button1 js-open-modal" data-modal="6">Our Locations</button>
+        <button type="submit" class="contacts__button2 js-open-modal" data-modal="7">Franchise</button>
+    </div>
+</contacts>
+
+
+
+
+    <!-- модальное окно с картой-->
+
+    <div class="map modal" data-modal="6">
+        <button class="map__btn js-modal-close">X</button>
+        <h1 class="map__title">Our Locations</h1>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10348.11904717437!2d34.578310431655915!3d49.57832754774703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e5a6576a0d%3A0xcdfded8b7b40ec91!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1673864193440!5m2!1sru!2sua" width="224" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button type="button" class="map__button">Open map</button>
+    </div>
+    
+
+     <!-- модальное окно с инпутом-->
+
+     <div>
+        <div class="modal" data-modal="7">
+
+          <button class="modal-button-svg js-modal-close">X</button>
+
+            <h1 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h1>
+            <p class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+         
+         <form class="form-mod">
+            <input type="text" class="form-input-mod" name="name" id="name" placeholder="Name" required>
+            <input type="tel" class="form-input-mod" name="tel" id="tel" placeholder="Phone" required>
+            <input type="email" class="form-input-mod" name="mail" id="mail" placeholder="Email" required>
+            <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+            <button type="submit" class="modal-button">Submit</button>
+          </form>
+
+        </div>
+      </div>
