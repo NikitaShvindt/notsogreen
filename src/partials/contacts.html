@@ -102,8 +102,14 @@
     </ul>
 
     <div class="contacts__button">
-        <button type="submit" class="contacts__button1 js-open-modal" data-modal="6">Our Locations</button>
-        <button type="submit" class="contacts__button2 js-open-modal" data-modal="7">Franchise</button>
+        <button type="submit" class="contacts__button1 js-open-modal" data-modal="6">Our Locations<svg
+            class="icon-vectorright" width="6" height="10">
+            <use href="./images/svg/symbol-defs.svg#icon-vectorright"></use>
+        </svg></button>
+        <button type="submit" class="contacts__button2 js-open-modal" data-modal="7">Franchise<svg
+            class="icon-vectorright" width="6" height="10">
+            <use href="./images/svg/symbol-defs.svg#icon-vectorright"></use>
+        </svg></button>
     </div>
 </contacts>
 
@@ -112,18 +118,18 @@
 
     <!-- модальное окно с картой-->
 
-    <div class="map modal" data-modal="6">
+    <div class="modal__map modal" data-modal="6">
         <button class="map__btn js-modal-close">X</button>
         <h1 class="map__title">Our Locations</h1>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10348.11904717437!2d34.578310431655915!3d49.57832754774703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e5a6576a0d%3A0xcdfded8b7b40ec91!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1673864193440!5m2!1sru!2sua" width="224" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <button type="button" class="map__button">Open map</button>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10349.187088391023!2d34.557453576238274!3d49.57329066430538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6136cd2c6bdb09!2sKyiv%20Shopping%20Centre!5e0!3m2!1sru!2sua!4v1673942954982!5m2!1sru!2sua" width="224" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="https://goo.gl/maps/PXmpH8B1JSjw6vK89" target="_blank" rel="noreferrer noopener" class="map__button">Open map</a>
     </div>
     
 
      <!-- модальное окно с инпутом-->
 
      <div>
-        <div class="modal" data-modal="7">
+        <div class="modal__form modal" data-modal="7">
 
           <button class="modal-button-svg js-modal-close">X</button>
 

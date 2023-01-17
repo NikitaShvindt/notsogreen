@@ -180,10 +180,10 @@
    
     @media screen and (min-width:768px) {
         flex-direction: row;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
     }
     @media screen and (min-width:1200px) {
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
     }
 } 
 .contacts__button1 {
@@ -203,10 +203,6 @@
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
-    // &::after {
-    //     content: "..//../images/svg/symbol-defs.svg#icon-vectorright";
-
-    // }
     &:hover {
         background:  #0A8817;
     }
@@ -240,10 +236,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-       // &::after {
-    //     content: "..//../images/svg/symbol-defs.svg#icon-vectorright";
-
-    // }
     &:hover {
         border: 2px solid #0A8817;
     }
@@ -263,20 +255,24 @@
         margin-left: 0;
     }
 }
+.icon-vectorright {
+    padding-left: 4px;
+    
+}
 
 
 
 // <!-- модальное окно с картой-->
 
-.map {
-    position: relative;
-    width: 280px;
-    height: 365px;
+.modal__map {
+    // position: relative;
+    width: 290px;
+    height: 370px;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 
     @media screen and (min-width:768px) {
         width: 568px;
@@ -297,8 +293,8 @@
     color: #131313;
     margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 17px;
-    margin-right: auto;
+    // margin-left: 17px;
+    // margin-right: auto;
 
    @media screen and (min-width:768px) {
     @include font (20px, 400, 1.4, null);
@@ -307,7 +303,10 @@
    }
 }
 .map__iframe {
-    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     border-radius: 10px;
 
     @media screen and (min-width:768px) {
@@ -341,7 +340,7 @@
 // <!-- модальное окно с инпутом-->
 
 
-.modal {
+.modal__form{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -355,6 +354,7 @@
 
     @media screen and (min-width:768px) {
         width: 568px;
+        height: 680px;
         padding: 32px 60px;
     }
 }
