@@ -47,7 +47,8 @@
     padding-bottom: 0;
   }
   transform: translateX(0);
-  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out,
+    visibility 250ms ease-in-out;
 
   &.is-hidden {
     transform: translateX(100%);
@@ -80,7 +81,7 @@
     line-height: 1.22;
     text-align: center;
     text-decoration: none;
-    color: #FCFCFC;
+    color: #fcfcfc;
     &:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -115,6 +116,10 @@
   margin-top: 110px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
   @media (min-width: 768px) {
     display: none;
   }
@@ -130,6 +135,7 @@
   background: #ababab;
 }
 .btn-icon {
+  margin-left: 4px;
   fill: currentColor;
 }
 .is-hidden {
