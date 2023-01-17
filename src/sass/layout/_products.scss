@@ -1,44 +1,44 @@
 .ice-cream {
-  background-image: url(/src/images/backgrund/backmobile.jpg);
-  background-position: top;
-  background-repeat: repeat;
-  background-size: contain;
+  // background-image: url(/src/images/backgrund/backmobile.jpg);
+  // background-position: top;
+  // background-repeat: repeat;
+  // background-size: contain;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/backgrund/backgroudmobile.png);
-  }
+  // @media screen and (min-width: 480px) {
+  //   background-image: url(../images/backgrund/backgroudmobile.png);
+  // }
 
-  @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-width: 480px) and (min-resolution: 192dpi),
-    screen and (min-width: 480px) and (min-resolution: 2dppx) {
-    background-image: url(../images/backgrund/backgroudmobilex2.png);
-  }
+  // @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  //   screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  //   screen and (min-width: 480px) and (min-resolution: 192dpi),
+  //   screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  //   background-image: url(../images/backgrund/backgroudmobilex2.png);
+  // }
 
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/backgrund/backtablet.jpg);
-  }
+  // @media screen and (min-width: 768px) {
+  //   background-image: url(../images/backgrund/backtablet.jpg);
+  // }
 
-  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-width: 768px) and (min-resolution: 192dpi),
-    screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    background-image: url(../images/backgrund/backtabletx2.jpg);
-  }
+  // @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  //   screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  //   screen and (min-width: 768px) and (min-resolution: 192dpi),
+  //   screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  //   background-image: url(../images/backgrund/backtabletx2.jpg);
+  // }
 
 
-  @media screen and (min-width: 1200px) {
-    background-image: url(/src/images/backgrund/backdesktop.jpg);
-  }
+  // @media screen and (min-width: 1200px) {
+  //   background-image: url(/src/images/backgrund/backdesktop.jpg);
+  // }
 
-  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-    screen and (min-width: 1200px) and (min-resolution: 192dpi),
-    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    background-image: url(/src/images/backgrund/backdesktopx2.jpg);
-  }
+  // @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  //   screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  //   screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  //   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  //   background-image: url(/src/images/backgrund/backdesktopx2.jpg);
+  // }
 }
 
 .ice-cream__label {
@@ -207,7 +207,7 @@
 }
 
 .ice-cream__button {
-  cursor: pointer;
+  // cursor: pointer;
   width: 38px;
   height: 14px;
   background-color: rgba(0, 0, 0, 0);

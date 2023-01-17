@@ -12,6 +12,8 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 
@@ -25,7 +27,7 @@
 
 .advantages__item {
   @media screen and (min-width: 480px) {
-    width: 2130px;
+    width: 230px;
   }
   @media screen and (min-width: 768px) {
     width: 152px;
