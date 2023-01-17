@@ -23,11 +23,11 @@ body {
 
   @include desktop {
     background-image: url(../images/backgrund/backdesktop.jpg);
-    background-position: 50% 400px;
+    background-position: 50% 390px;
 
     @include retina {
       background-image: url(../images/backgrund/backdesktopx2.jpg);
-      background-position: 50% 400px;
+      background-position: 50% 390px;
     }
   }
 }
