@@ -36,7 +36,7 @@
       </ul>
     </nav>
     <button
-      class="menu-toggle js-open-menu"
+      class="menu-toggle menu-open"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
@@ -59,7 +59,7 @@
     </button>
   </div>
 
-  <div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu-container mob-menu is-hidden" id="mobile-menu">
     <a href="./index.html" class="logo">
       <picture>
         <source
@@ -81,7 +81,7 @@
         />
       </picture>
     </a>
-    <button class="menu-toggle js-close-menu">
+    <button class="menu-toggle menu-close">
       <svg width="32" height="32">
         <use
           class="icon-cross"
@@ -128,7 +128,7 @@
 
   <div class="modal modal--anim" data-modal="1">
     <button type="button" class="modal-close js-modal-close">
-      <svg class="icon-modal">
+      <svg class="icon-modal" width="24" height="24">
         <use href="./images/svg/symbol-defs.svg#icon-ep_close"></use>
       </svg>
     </button>
