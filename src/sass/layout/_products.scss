@@ -648,32 +648,44 @@
   align-items: center;
   display: flex;
   position: absolute;
+
+  width: 43px;
+  height: 43px;
+  text-align: center;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    width: 53px;
+    height: 53px;
+  }
 }
 
-.flipswitch-kcal:checked::after {
+.flipswitch-kcal:not(:checked)::after {
   content: 'kcal';
 }
 
-.flipswitch-prot:checked::after {
+.flipswitch-prot:not(:checked)::after {
   content: 'Prote...';
 }
 
-.flipswitch-fats:checked::after {
+.flipswitch-fats:not(:checked)::after {
   content: 'Fats';
 }
 
-.flipswitch-cards:checked::after {
+.flipswitch-cards:not(:checked)::after {
   content: 'Carbs';
 }
 
-.flipswitch-kcal:checked::after,
-.flipswitch-prot:checked::after,
-.flipswitch-fats:checked::after,
-.flipswitch-cards:checked::after {
-  top: 42px;
+.flipswitch-kcal:not(:checked)::after,
+.flipswitch-prot:not(:checked)::after,
+.flipswitch-fats:not(:checked)::after,
+.flipswitch-cards:not(:checked)::after {
+  top: 22px;
   
   @media screen and (min-width: 768px) {
-    top: 54px;
+    top: 30px;
   }
 }
 
