@@ -112,7 +112,7 @@
 
     <!-- модальное окно с картой-->
 
-    <div class="map modal" data-modal="6">
+    <div class="map modal modal-contact" data-modal="6">
         <button class="map__btn js-modal-close">X</button>
         <h1 class="map__title">Our Locations</h1>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10348.11904717437!2d34.578310431655915!3d49.57832754774703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e5a6576a0d%3A0xcdfded8b7b40ec91!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1673864193440!5m2!1sru!2sua" width="224" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -123,18 +123,18 @@
      <!-- модальное окно с инпутом-->
 
      <div>
-        <div class="modal" data-modal="7">
+        <div class="modal modal-contact" data-modal="7">
 
           <button class="modal-button-svg js-modal-close">X</button>
 
-            <h1 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h1>
-            <p class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+            <h1 class="modal__title-contact">Thank you for your interest in owning an Ice Cream shop</h1>
+            <p class="modal__text-contact">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
          
          <form class="form-mod">
             <input type="text" class="form-input-mod" name="name" id="name" placeholder="Name" required>
             <input type="tel" class="form-input-mod" name="tel" id="tel" placeholder="Phone" required>
             <input type="email" class="form-input-mod" name="mail" id="mail" placeholder="Email" required>
-            <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+            <textarea class="contact__textarea" name="comment" id="comment" placeholder="Comment"></textarea>
             <button type="submit" class="modal-button">Submit</button>
           </form>
 
