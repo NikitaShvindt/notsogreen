@@ -13,7 +13,7 @@
             and natural stabilizer
           </p>
         </div>
-        <button class="ice-cream__button"></button>
+        <button class="ice-cream__button js-open-modal" data-modal="2"></button>
       </li>
 
       <li class="products-item products-item__icecoffee">
@@ -23,7 +23,10 @@
             Fragrant invigorating drink created from 100% natural ingredients
             without the use of preservatives and flavor enhancers
           </p>
-          <button class="ice-cream__button"></button>
+          <button
+            class="ice-cream__button js-open-modal"
+            data-modal="2"
+          ></button>
         </div>
       </li>
 
@@ -34,9 +37,121 @@
             Sweet drinks based on milk and ice cream, supplemented with syrups,
             fruits, berries and other sweets of your choice
           </p>
-          <button class="ice-cream__button"></button>
+          <button
+            class="ice-cream__button js-open-modal"
+            data-modal="2"
+          ></button>
         </div>
       </li>
     </ul>
+
+    <div class="modal modal--anim modal-ingred" data-modal="2">
+      <div class="modal-ingred__product">
+        <button type="button" class="modal-ingred__button js-modal-close">
+          <svg class="modal-ingred__icon"  >
+            <use width="24" height="24"
+              href="./images/svg/symbol-defs.svg#icon-clarity_close-line"
+            ></use>
+          </svg>
+        </button>
+
+        <p class="modal-ingred__title">Chocolate icecream</p>
+        <div class="modal-ingred__block">
+          <div class="modal-ingred__background"></div> 
+          <div class="modal-ingred__images"></div>
+        </div>
+
+        <div class="modal-ingred__checkbox">
+          <input
+            type="checkbox"
+            checked=""
+            class="flipswitch flipswitch-kcal"
+          />
+          <input
+            type="checkbox"
+            checked=""
+            class="flipswitch flipswitch-prot"
+          />
+          <input
+            type="checkbox"
+            checked=""
+            class="flipswitch flipswitch-fats"
+          />
+          <input
+            type="checkbox"
+            checked=""
+            class="flipswitch flipswitch-cards"
+          />
+        </div>
+      </div>
+
+      <div class="modal-ingred__composition">
+        <h2 class="modal-ingred__composition-title">Ingredients</h2>
+        <ul class="modal-ingred__composition-list">
+          <li class="modal-ingred__composition-item">
+            <p class="modal-ingred__composition-text">Milk</p>
+            <span class="modal-ingred__composition-text">100ml</span>
+          </li>
+          <li class="modal-ingred__composition-item">
+            <p class="modal-ingred__composition-text">Belgian chocolate</p>
+            <span class="modal-ingred__composition-text">20g</span>
+          </li>
+          <li class="modal-ingred__composition-item">
+            <p class="modal-ingred__composition-text">Cream</p>
+            <span class="modal-ingred__composition-text">150ml</span>
+          </li>
+          <li class="modal-ingred__composition-item">
+            <p class="modal-ingred__composition-text">Cocoa powder</p>
+            <span class="modal-ingred__composition-text">30g</span>
+          </li>
+          <li class="modal-ingred__composition-item">
+            <p class="modal-ingred__composition-text">Sugar</p>
+            <span class="modal-ingred__composition-text">40g</span>
+          </li>
+          <li class="modal-ingred__composition-item">
+            <p class="modal-ingred__composition-text">Vanilla sugar</p>
+            <span class="modal-ingred__composition-text">10g</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal-ingred__section">
+        <div class="modal-ingred__form-block">
+          <form class="modal-ingred__form">
+            <div class="modal-ingred__form-field">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-ingred__form-input modal-ingred__form-item"
+                placeholder="Name"
+                required=""
+              />
+            </div>
+            <div class="modal-ingred__form-field">
+              <input
+                type="tel"
+                name="tel"
+                id="tele"
+                class="modal-ingred__form-input modal-ingred__form-item"
+                placeholder="Phone"
+                required=""
+              />
+            </div>
+            <div class="modal-ingred__form-field modal-ingred__form-textarea">
+              <textarea
+                name="comment"
+                id="comment"
+                class="modal-ingred__form-item modal-ingred__textarea"
+                placeholder="Comment"
+              ></textarea>
+            </div>
+          </form>
+          <div class="modal-ingred__form-button">
+            <button type="submit" class="modal-ingred__form-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
